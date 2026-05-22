@@ -1,0 +1,17 @@
+
+
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #6381BB;
+}
+
+/* override bootstrap colors */
+.text-bg-dark {
+  background-color: #6381BB !important; 
+  color: #e0e0e0 !important;
+}
+
+.list-group-item {
+    color: #42567f!important;
+}
