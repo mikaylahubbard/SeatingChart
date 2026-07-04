@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wedding Seating</title>
-
   <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Local Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-light">
-
   <div class="container py-5">
-
     <div class="text-center mb-5">
-
       <span class="display-5">Luis <small>&amp;</small> Mikayla</span>
       <p class="lead">07.11.26</p>
+    </div>
 
+    <!-- Search Bar -->
+    <div class="guest-search-wrapper">
+      <input type="text" id="guest-search" class="form-control form-control-lg" placeholder="Search for your name...">
     </div>
 
     <!-- Guest Sections Render Here -->
     <div id="guest-groups"></div>
-
   </div>
-
   <!-- Letter Section Template -->
   <template id="letter-template">
-
     <section class="mb-5">
-
       <h2 class="border-bottom pb-2 mb-3 letter-heading">
         A
       </h2>
-
       <div class="list-group guest-list">
       </div>
-
     </section>
-
   </template>
-
   <!-- Guest Row Template -->
   <template id="guest-template">
-
     <div class="list-group-item">
-
       <div class="d-flex justify-content-between align-items-center">
-
         <span class="fw-medium guest-name">
           Guest Name
         </span>
-
-      <p class="h4 guest-table"> 1 </p>
-
-
+        <p class="h4 guest-table"> 1 </p>
       </div>
-
     </div>
-
   </template>
-
   <script src="script.js"></script>
-
 </body>
+
 </html>

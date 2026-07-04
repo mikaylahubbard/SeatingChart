@@ -1,6 +1,3 @@
-
-
-
 body {
   font-family: Georgia, 'Times New Roman', serif;
   color: #6381BB;
@@ -8,10 +5,40 @@ body {
 
 /* override bootstrap colors */
 .text-bg-dark {
-  background-color: #6381BB !important; 
+  background-color: #6381BB !important;
   color: #e0e0e0 !important;
 }
 
 .list-group-item {
-    color: #42567f!important;
+  color: #42567f !important;
+}
+
+/* Search bar, styled to match the theme */
+.guest-search-wrapper {
+  max-width: 400px;
+  margin: 0 auto 2.5rem;
+}
+
+#guest-search {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.95rem;
+  color: #42567f;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(99, 129, 187, 0.4);
+  border-radius: 0;
+  padding: 0.4rem 0.25rem;
+}
+
+#guest-search::placeholder {
+  color: #6381BB;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+#guest-search:focus {
+  outline: none;
+  border-bottom-color: #6381BB;
+  box-shadow: none;
+  color: #42567f;
 }
