@@ -1,6 +1,6 @@
 async function loadGuests() {
   // Fetch CSV file
-  const response = await fetch('./guests.csv');
+  const response = await fetch('./guests1.csv');
   const csvText = await response.text();
 
   // Split into lines
@@ -78,11 +78,17 @@ function renderGuests(groupedGuests) {
         guestTemplate.content.cloneNode(true);
 
       // Display as "Last Name, First Name"
+      const fullName = `${guest.lastName}, ${guest.firstName}`;
+
       guestClone.querySelector('.guest-name')
-        .textContent = `${guest.lastName}, ${guest.firstName}`;
+        .textContent = fullName;
 
       guestClone.querySelector('.guest-table')
         .textContent = `${guest.table}`;
+
+      // Store a lowercase, searchable version of the name on the row itself
+      const guestRow = guestClone.querySelector('.list-group-item');
+      guestRow.dataset.searchName = fullName.toLowerCase();
 
       guestList.appendChild(guestClone);
     }
@@ -91,10 +97,38 @@ function renderGuests(groupedGuests) {
   }
 }
 
+function setupSearch() {
+  const searchInput = document.getElementById('guest-search');
+  if (!searchInput) return;
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    // Every rendered letter section
+    const sections = document.querySelectorAll('#guest-groups section');
+
+    sections.forEach((section) => {
+      let visibleCount = 0;
+
+      const rows = section.querySelectorAll('.list-group-item');
+
+      rows.forEach((row) => {
+        const matches = row.dataset.searchName.includes(query);
+        row.style.display = matches ? '' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      // Hide the whole letter section if no guests in it match
+      section.style.display = visibleCount > 0 ? '' : 'none';
+    });
+  });
+}
+
 async function init() {
   const groupedGuests = await loadGuests();
 
   renderGuests(groupedGuests);
+  setupSearch();
 }
 
 init();
