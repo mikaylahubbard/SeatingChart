@@ -1,61 +1,139 @@
-name,table
-Anderson Claire,3
-Anderson Robert,3
-Barnes Elena,7
-Barnes Marcus,7
-Bennett Sophia,1
-Carter David,5
-Carter Michelle,5
-Collins Nora,2
-Cooper Henry,4
-Davis Amelia,6
-Davis Thomas,6
-Edwards Grace,8
-Evans Oliver,2
-Foster Lily,9
-Garcia Isabella,10
-Garcia Rafael,10
-Green Charlotte,4
-Hall Benjamin,1
-Harris Abigail,3
-Harris William,3
-Hughes Penelope,7
-Jackson Ethan,5
-Johnson Evelyn,2
-Johnson Michael,2
-King Scarlett,8
-Lee Daniel,6
-Lewis Hannah,9
-Lewis Samuel,9
-Martin Victoria,1
-Martinez Sofia,10
-Mitchell George,4
-Moore Elizabeth,7
-Morgan Arthur,5
-Morris Chloe,8
-Nelson Julian,6
-Parker Alice,3
-Patel Priya,2
-Patel Rohan,2
-Phillips Eleanor,1
-Reed Sebastian,9
-Rivera Carmen,4
-Roberts Frederick,7
-Robinson Audrey,5
-Rogers Theodore,10
-Scott Josephine,8
-Smith Alexander,1
-Smith Margaret,1
-Taylor Caroline,6
-Taylor Edward,6
-Thompson Natalie,3
-Turner Oscar,4
-Walker Harriet,9
-Ward Edmund,5
-White Frances,7
-Wilson Catherine,8
-Wilson Patrick,8
-Wood Rosalind,10
-Wright Leonard,2
-Young Beatrice,4
-Young Gregory,4
+﻿Last Name,First Name,Table/Row,Email,Dietary,Notes
+Allen,Hope,8,,dairy allergy,
+Alvaerez,Rigo,29,,,
+Anderson,Braden,8,,,
+Angilo,Rosa,5,,,
+Brody,Arthur,4,,,
+Brody,Linda,4,,,
+Brown,Maria,6,,,
+Brown,Mark,6,,,
+Cavender,Angela,10,,,
+Cavender,Katie,3,,,
+Cavender,Kirk,10,,,
+Cavender,Lexi,10,,,
+Cavender,Maggie,10,,,
+Chavez,Carmelo,7,,,
+Chavez,Luigi,17,,,
+Chavez-Martinez,Debanhie,7,,,
+Chavez-Martinez,Melanie,7,,,
+Chicas,Tiffany,23,,,
+Colegrove,Ian,8,,dairy allergy,
+De La Cruz,Jacob,5,,,
+De La Cruz,Marcos,5,,,
+Dixon,Tiffany,12,,No Peanuts at all,
+Faulkenberry,Abigail,10,,,
+Faulkenberry,Logan,10,,,
+Garcia,Ale,24,,,
+Garcia,Alexis,24,,,
+Garcia,Ellia,24,,,
+Garcia,Guillermo,24,,,
+Garcia,Judith,24,,,
+Gazella,Robert,9,,,
+Gazella,Roxanne,9,,,
+Gillen,Emma,2,,,
+Gillen,Kayla,2,,,
+Gillespie,Gavin,3,,No,
+Gonzales,Agripina,30,,,
+Gosnell,Miranda,3,,,
+Grice,Andrew,12,,,
+Hawkins,Scottie,21,,,
+Hiland,Gabe,3,,,
+Hiland,Hunter,3,,,
+Hill,McKenzie,8,,,
+Hillanbrand,Alyssa,2,,,
+Hillanbrand,Nathan,2,,,
+Holland,Jayce,19,,,
+Hubbard,Byard Richard,9,,,
+Hubbard,Chris,4,,,
+Hubbard,Elaina,2,,,
+Hubbard,Eoin,9,,,
+Hubbard,Joshua,4,,Gluten Free,
+Hubbard,Josiah,4,,,
+Hubbard,Mary Ann,9,,,
+Hubbard,Michael,9,,,
+Hubbard,Michelle,4,,,
+Hubbard,Mikayla,1,,,
+Jaramillo,Douglas,22,,,
+Jimenez,Trinidad,25,,,
+Jiménez,Trinidad,25,,,
+Kirkland,Meghan,3,,No,
+Lancaster,Braden,10,,,
+Lashko,Amira,16,,,
+Lashko,Erik,16,,,
+Lashko,Tatyana,16,,,
+Lasoya,Veronica,19,,,
+Lazoya,Daniela,20,,,
+Lazoya,Jazlyn,20,,,
+Lazoya,Jonathan,20,,,
+Lozoya,Liam,20,,,
+Luna,Linda,5,,,
+Luna,Violet,5,,,
+Luna,Viri,5,,,
+Maendel,Elise,4,,Gluten Free,
+Magallan,Jose Luis,23,,,
+Magallan,Maria,23,,,
+Magallan,Oscar,23,,,
+Martinez,Bernarda,7,,,
+Martinez,Doroteo,7,,,
+Martinez,Enrique,6,,,
+Martinez,Hugo,7,,,
+Martinez,Inna,6,,,
+Martinez,Joseph,6,,,
+Martinez,Nathan,6,,,
+Martinez,Oscar,7,,,
+Martinez-Meraz,Luis,1,,,
+Martinez-Meraz,Maithy,2,,,
+Martinez-Yanez,Yaneth,7,,,
+McDonald,Catie,8,,No,
+McFall,Ellin,4,,,
+Meentemeyer,Jason,11,,,
+Meentemeyer,Susanna,11,,,
+Meloon,Regan,12,,,
+Meraz,Alma,5,,,
+Chavez Meraz,Miguel,5,,,
+Meraz,Vachy,22,,,
+Monreal,Katy,21,,,
+Monreal,Sandra,23,,,
+Lasoya Monreal,Tanya,18,,,
+Morgan,Nathalie,28,,,
+Neri,Kevin,25,,,
+Onufriychuck,Alina,13,,,
+Onufriychuck,Sam,13,,,
+Onufriychuk,David,15,,,
+Onufriychuk,Emily,15,,,
+Onufriychuk,Eshter,15,,,
+Onufriychuk,Inessa,15,,,
+Onufriychuk,Victoriya,15,,,
+Palma,Ester,26,,,
+Palma,Guadalupe,26,,,
+Pugh,Elizabeth,17,,,
+Ramirez,Juan,32,,,
+Rivera,Debbie,27,,,
+Rivera,Edwin,27,,,
+Rodriguez,Natalie,19,,,
+Rucci,Brian,9,,,
+Rucci,Mary,9,,,
+Rutledge,Natalie,10,,,
+Shepherd,Noah,2,,,
+Shtanko,Alina,14,,No we eat everything :),
+Shtanko,Benny,14,,No we eat everything :),
+Shtanko,Dima,14,,No we eat everything :),
+Shtanko,Isaac,14,,No we eat everything :),
+Shtanko,Jay,14,,No we eat everything :),
+Shtanko,Nadia,14,,,
+Shtanko,Olga,14,,No we eat everything :),
+Shtanko,Vadim,14,,,
+Stelmar,Jack,8,,No,
+Stiles,Benji,3,,,
+Strickland,Kate,8,,,
+Suarez,Marina,31,,,
+Suarez,Pablo,31,,,
+Talley,Samantha,18,,,
+Trejo,Alexis,30,,,
+Trejo,Dariel,30,,,
+Trejo,Dario,30,,,
+Upp,James,12,,No Peanuts at all,
+Vega,Cynthia,24,,,
+Wheless,Abigail,8,,,
+Whitfield,Luke,3,,,
+Wright,Salisha,12,,,

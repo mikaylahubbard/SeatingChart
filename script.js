@@ -13,20 +13,26 @@ async function loadGuests() {
   const groupedGuests = {};
 
   for (const line of lines) {
-    const [name, table] = line.split(',');
+    if (!line.trim()) continue;
 
-    // First letter of last name
-    const firstLetter = name.charAt(0).toUpperCase();
+    // Only care about the first three columns: Last Name, First Name, Table/Row
+    const parts = line.split(',');
+    const [lastName, firstName, table] = parts;
 
-    // Created a letter group if it doesn't already exist
+    const cleanLast = (lastName || '').trim();
+    const cleanFirst = (firstName || '').trim();
+
+    // Group by first letter of LAST name
+    const firstLetter = cleanLast.charAt(0).toUpperCase();
+
     if (!groupedGuests[firstLetter]) {
       groupedGuests[firstLetter] = [];
     }
 
-    // Add the name to the letter group
     groupedGuests[firstLetter].push({
-      name: name.trim(),
-      table: Number(table)
+      lastName: cleanLast,
+      firstName: cleanFirst,
+      table: (table || '').trim()
     });
   }
 
@@ -58,16 +64,22 @@ function renderGuests(groupedGuests) {
     const guestList =
       sectionClone.querySelector('.guest-list');
 
+    // Sort by last name, then first name
     groupedGuests[letter]
-      .sort((a, b) => a.name.localeCompare(b.name));
+      .sort((a, b) => {
+        const lastCompare = a.lastName.localeCompare(b.lastName);
+        if (lastCompare !== 0) return lastCompare;
+        return a.firstName.localeCompare(b.firstName);
+      });
 
     for (const guest of groupedGuests[letter]) {
 
       const guestClone =
         guestTemplate.content.cloneNode(true);
 
+      // Display as "Last Name, First Name"
       guestClone.querySelector('.guest-name')
-        .textContent = guest.name;
+        .textContent = `${guest.lastName}, ${guest.firstName}`;
 
       guestClone.querySelector('.guest-table')
         .textContent = `${guest.table}`;
