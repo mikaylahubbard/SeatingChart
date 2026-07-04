@@ -1,6 +1,6 @@
 async function loadGuests() {
   // Fetch CSV file
-  const response = await fetch('./guests1.csv');
+  const response = await fetch('./guests.csv');
   const csvText = await response.text();
 
   // Split into lines
